@@ -19,8 +19,7 @@ A physical device displays the bird emotions training results with a RGB LED tex
 Audio captured with microphone is clipped and used as input for model training. The model is trained on Edge Impulse. Here, 4 birds’ emotions are labelled in the mode with random audio clips as background noise. The project is made public:  https://studio.edgeimpulse.com/public/115266/latest
 
 
-
-Once the model is well trained, the model is downloaded in a file named `modelfile.eim` by following the Installation guidance of **Linux Python SDK** issued by Edge Impulse, as well as a json file named `edge-impulse-config.json` . In the Linux Python SDK library, an example file named `classify.py` can be modified to run the model on Raspberry Pi 4, which is located in the directory `linux-sdk-python/examples/audio/` . 
+Once the model is well trained, the model is downloaded in a file named `modelfile.eim` by following the Installation guidance of **[Linux Python SDK](https://github.com/edgeimpulse/linux-sdk-python)** issued by Edge Impulse, as well as a json file named `edge-impulse-config.json` . In the Linux Python SDK library, an [example file](https://github.com/edgeimpulse/linux-sdk-python/tree/master/examples/audio) named `classify.py` can be modified to run the model on Raspberry Pi 4, which is located in the directory `linux-sdk-python/examples/audio/` . 
 
  
 
