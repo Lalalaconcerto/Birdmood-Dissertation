@@ -4,9 +4,9 @@ This project develops a system for acoustic monitoring device to classify birdsâ
 
 The recording devices are based on the Raspberry Pi 4, where a USB microphone and a speaker are attached. Machine learning model is deployed on the Raspberry Pi. The model classifies different bird calls with different emotional labels. The training results are uploaded to MQTT. For a full overview of the electronic and mechanical design of the Raspberry Pi based device, please refer to [Human-bird sound interaction device handover document](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device).
 
-At the same time, a push button is introduced which allows people to control the speaker to play pre-recorded birds calls for communication with the real bird. The overview of the design of the Human-bird sound interaction device based on Raspberry Pi is shown in **section 2** as follows.
+At the same time, a push button is introduced which allows people to control the speaker to play pre-recorded birds calls for communication with the real bird. The overview of the design of the Human-bird sound interaction device based on Raspberry Pi is shown in **Section 2** as follows.
 
-A physical device displays the bird emotions training results with a RGB LED text display based on ESP8266 NodeMcu board. It subscribes data from MQTT and display it with different lighted texts. The overview of the mechanical design of the bird emotion notification device based on ESP8266 is shown in **section 3** as follows.
+A physical device displays the bird emotions training results with a RGB LED text display based on ESP8266 NodeMcu board. It subscribes data from MQTT and display it with different lighted texts. The overview of the mechanical design of the bird emotion notification device based on ESP8266 is shown in **Section 3** as follows.
 
  
 
