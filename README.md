@@ -2,15 +2,15 @@
 
 This project develops a system for acoustic monitoring device to classify birds’ emotions by their calls through machine learning and an interactive device which allows human to speak to birds. 
 
-The recording devices are based on the Raspberry Pi 4, where a USB microphone and a speaker are attached. Machine learning model is deployed on the Raspberry Pi. The model classifies different bird calls with different emotional labels. The training results are uploaded to MQTT. For a full overview of the electronic and mechanical design of the Raspberry Pi based device, please refer to ww.
+The recording devices are based on the Raspberry Pi 4, where a USB microphone and a speaker are attached. Machine learning model is deployed on the Raspberry Pi. The model classifies different bird calls with different emotional labels. The training results are uploaded to MQTT. For a full overview of the electronic and mechanical design of the Raspberry Pi based device, please refer to [Human-bird sound interaction device handover document](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device).
 
-At the same time, a push button is introduced which allows people to control the speaker to play pre-recorded birds calls for communication with the real bird. The overview of the design of the Human-bird sound interaction device based on Raspberry Pi is shown in ww.
+At the same time, a push button is introduced which allows people to control the speaker to play pre-recorded birds calls for communication with the real bird. The overview of the design of the Human-bird sound interaction device based on Raspberry Pi is shown in **section 2** as follows.
 
-A physical device displays the bird emotions training results with a RGB LED text display based on ESP8266 NodeMcu board. It subscribes data from MQTT and display it with different lighted texts. The overview of the mechanical design of the bird emotion notification device based on ESP8266 is shown in ww.
+A physical device displays the bird emotions training results with a RGB LED text display based on ESP8266 NodeMcu board. It subscribes data from MQTT and display it with different lighted texts. The overview of the mechanical design of the bird emotion notification device based on ESP8266 is shown in **section 3** as follows.
 
  
 
-## **Bird Emotion Classification Using Edge Impulse and Live Data Streaming**
+## 1. **Bird Emotion Classification Using Edge Impulse and Live Data Streaming**
 
 ### **Code design**
 
@@ -19,11 +19,12 @@ A physical device displays the bird emotions training results with a RGB LED tex
 Audio captured with microphone is clipped and used as input for model training. The model is trained on Edge Impulse. Here, 4 birds’ emotions are labelled in the mode with random audio clips as background noise. The project is made public:  https://studio.edgeimpulse.com/public/115266/latest
 
 
+
 Once the model is well trained, the model is downloaded in a file named `modelfile.eim` by following the Installation guidance of **[Linux Python SDK](https://github.com/edgeimpulse/linux-sdk-python)** issued by Edge Impulse, as well as a json file named `edge-impulse-config.json` . In the Linux Python SDK library, an [example file](https://github.com/edgeimpulse/linux-sdk-python/tree/master/examples/audio) named `classify.py` can be modified to run the model on Raspberry Pi 4, which is located in the directory `linux-sdk-python/examples/audio/` . 
 
  
 
-The firmware is triggered to run on boot from the command `python3 classify-mqtt.py modelfile.eim`. 
+The firmware is triggered to run on boot from the command `python3 classify-mqtt.py modelfile.eim`.  
 
  
 
@@ -35,7 +36,10 @@ The sequence of events from the classify function (in `classify-mqtt.py`) is as 
 
 3. Publish training results on MQTT : `client.publish(topic + label, score)`
 
-The screenshot of the data published on MQTT is shown here:
+`classify-mqtt.py` is available at [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device). The screenshot of the data published on MQTT is shown here:
+
+![1981660920269_ pic](https://user-images.githubusercontent.com/92024194/185814930-64797b05-7ac9-4933-9735-6d7d6cafb6ca.jpg)
+
 
 
 
@@ -55,11 +59,11 @@ You could connect to the Raspberry Pi and connect to Edge Impulse easily.
 
  
 
-## **Human-bird sound interaction device based on Raspberry Pi**
+## 2. **Human-bird sound interaction device based on Raspberry Pi**
 
  
 
-A speaker is attached to the Raspberry Pi, as well as a push button. The push button can control the speaker to play a pre-recorded bird singing, which allow people to talk to the real bird. The command is programmed in a python file named `sound.py`. The overview of the electronic and mechanical design of the Human-bird sound interaction device based on Raspberry Pi is shown in ww.
+A speaker is attached to the Raspberry Pi, as well as a push button. The push button can control the speaker to play a pre-recorded bird singing, which allow people to talk to the real bird. The command is programmed in a [python file](https://github.com/Lalalaconcerto/Birdmood-Dissertation/blob/main/Human-bird%20sound%20interaction%20device/sound.py) named `sound.py`. The overview of the electronic and mechanical design of the Human-bird sound interaction device based on Raspberry Pi is shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device).
 
 ### **Code design:**
 
@@ -97,13 +101,25 @@ The sequence of events from the `sound` function (`in sound.py` ) is as follows:
 | ----------------------------------- |
 | Prusa 3D printer                    |
 
- 
+### Physical map:
 
-## **Bird Emotion Notification based on a RGB LED text display.** 
+The pysical maps are shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device/Pyhical%20map%20Pi).
+
+### **Enclosure:** 
+
+ The container of the Rasoberry Pi is made by WoodPLA material and printed by a Prusa 3D printer. The design sketches are shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device/Enclosure%20design%20Pi).
+
+### **Circuit Diagram**:
+
+The circuit diagram is shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device/Circuit%20diagram%20Pi).
+
+
+
+## 3. **Bird Emotion Notification based on a RGB LED text display.** 
 
 The device displays the emotion classified by a RGB LED text display based on ESP8266.
 
-Training results are transferred to MQTT and subscribed on ESP8266. Then different texts express the different emotions of the bird by illuminated text. The overview of the electronic and mechanical design of the bird emotion notification device based on ESP8266 is shown in Birdmood hardware handover document. 
+Training results are transferred to MQTT and subscribed on ESP8266. Then different texts express the different emotions of the bird by illuminated text. The overview of the electronic and mechanical design of the bird emotion notification device based on ESP8266 is shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Bird%20emotion%20notification%20device).
 
 ### **Code design:**
 
@@ -147,20 +163,20 @@ To programe ESP8266, Arduino IDE is applied. The sequence of events from the `Wo
 
 ### Physical map:
 
-
+The physucal maps are shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Bird%20emotion%20notification%20device/Physical%20map).
 
 ### **Enclosure:** 
 
-The body of this device is made of wood. The screen of this device is made made from a piece of acrylic and a piece of black cardboard. You can use laser cutter to cut material. The design sketch is shown in ww.
-
- 
+The body of this device is made of wood. The screen of this device is made made from a piece of acrylic and a piece of black cardboard. You can use laser cutter to cut material. The design sketches are shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Bird%20emotion%20notification%20device/Enclosure%20design). 
 
 ### **Circuit Diagram**:
 
- 
+ The circuit diagram is shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Bird%20emotion%20notification%20device/Circuit%20Diagram%20LED).
 
  
 
  
 
  
+
+
