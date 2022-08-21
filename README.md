@@ -58,6 +58,11 @@ The Raspberry Pi 4 is fully supported on Edge Impulse, If you would start using 
 You could connect to the Raspberry Pi and connect to Edge Impulse easily.
 
  
+ 
+ 
+ 
+ 
+ 
 
 ## 2. **Human-bird sound interaction device based on Raspberry Pi**
 
@@ -112,6 +117,10 @@ The pysical maps are shown [here](https://github.com/Lalalaconcerto/Birdmood-Dis
 ### **Circuit Diagram**:
 
 The circuit diagram is shown [here](https://github.com/Lalalaconcerto/Birdmood-Dissertation/tree/main/Human-bird%20sound%20interaction%20device/Circuit%20diagram%20Pi).
+
+
+
+
 
 
 
