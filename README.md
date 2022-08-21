@@ -8,9 +8,9 @@ The recording devices are based on the Raspberry Pi 4, where a USB microphone an
 
 A physical device displays the bird emotions training results with a RGB LED text display based on ESP8266 NodeMcu board. It subscribes data from MQTT and display it with different lighted texts. The overview of the mechanical design of the bird emotion notification device based on ESP8266 is shown in Birdmood hardware handover document.
 
-## **Bird Emotion Classification Using Edge Impulse and Live Data Streaming**
+# **Bird Emotion Classification Using Edge Impulse and Live Data Streaming**
 
-### **Code design**
+## **Code design**
 
 Audio captured with microphone is clipped and used as input for model training. The model is trained on Edge Impulse. Here, 4 birds’ emotions are labelled in the mode with random audio clips as background noise. The project is made public: 
 
@@ -40,9 +40,9 @@ The modelfile.eim file, the edge-impulse-config.json file and the classify-mqtt.
 
 
 
-### **Setup** 
+## **Setup** 
 
-#### **Setup from a stock Raspberry Pi OS image using Raspberry Pi 4** 
+### **Setup from a stock Raspberry Pi OS image using Raspberry Pi 4** 
 
 The Raspberry Pi 4 is fully supported on Edge Impulse, If you would start using this, please follow the instruction issued by Edge Impulse: Raspberry Pi 4 https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4
 
