@@ -10,7 +10,7 @@ A physical device displays the bird emotions training results with a RGB LED tex
 
 ## **Bird Emotion Classification Using Edge Impulse and Live Data Streaming**
 
-#### **Code design**
+### **Code design**
 
 Audio captured with microphone is clipped and used as input for model training. The model is trained on Edge Impulse. Here, 4 birds’ emotions are labelled in the mode with random audio clips as background noise. The project is made public: 
 
@@ -34,15 +34,15 @@ The sequence of events from the classify function (in classify-mqtt.py) is as fo
 
 The screenshot of the data published on MQTT is shown in MQTT-Screenshot
 
-#### **Configuring the device**
+### **Configuring the device**
 
 The modelfile.eim file, the edge-impulse-config.json file and the classify-mqtt.py file should be placed on a microSD card and insert into the Raspberry Pi 4. The edge-impulse-config.json file contains the authentication details for the account and project created on Edge Impulse.
 
 
 
-#### **Setup** 
+### **Setup** 
 
-##### **Setup from a stock Raspberry Pi OS image using Raspberry Pi 4** 
+#### **Setup from a stock Raspberry Pi OS image using Raspberry Pi 4** 
 
 The Raspberry Pi 4 is fully supported on Edge Impulse, If you would start using this, please follow the instruction issued by Edge Impulse: Raspberry Pi 4 https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4
 
