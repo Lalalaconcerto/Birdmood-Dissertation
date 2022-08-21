@@ -1,2 +1,21 @@
+**Bird Emotion Notification based on a RGB LED text display.** 
+
 The device displays the emotion classified by a RGB LED text display based on ESP8266.
+
 Training results are transferred to MQTT and subscribed on ESP8266. Then different texts express the different emotions of the bird by illuminated text. The overview of the electronic and mechanical design of the bird emotion notification device based on ESP8266 is shown in Birdmood hardware handover document. 
+
+**Hardware Components:**
+
+ 
+
+**Software apps and online devices:**
+
+ 
+
+**Hand tools and fabrication machines:**
+
+ 
+
+**Physical map****：**
+
+**Code design:**
