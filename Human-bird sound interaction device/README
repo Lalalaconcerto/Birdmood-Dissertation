@@ -1,4 +1,4 @@
-# **Human-bird sound interaction device based on Raspberry Pi**
+# Human-bird sound interaction device based on Raspberry Pi
 
 A speaker is attached to the Raspberry Pi, as well as a push button. The push button can control the speaker to play a pre-recorded bird singing, which allow people to talk to the real bird. The overview of the electronic and mechanical design of the Human-bird sound interaction device based on Raspberry Pi is shown here.
 
