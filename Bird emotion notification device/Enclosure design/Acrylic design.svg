@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg491"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview493"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5595104"
+     inkscape:cx="410.18004"
+     inkscape:cy="518.31029"
+     inkscape:window-width="1309"
+     inkscape:window-height="456"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs488" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3885"
+       transform="matrix(0.26458333,0,0,0.26458333,-96.882766,79.746179)">
+      <circle
+         class="st2"
+         cx="593.81879"
+         cy="28.638571"
+         r="4.3000002"
+         id="circle806"
+         style="fill:none;stroke:#ff0000;stroke-miterlimit:10" />
+      <circle
+         class="st2"
+         cx="891.41876"
+         cy="326.23856"
+         r="4.3000002"
+         id="circle808"
+         style="fill:none;stroke:#ff0000;stroke-miterlimit:10" />
+      <circle
+         class="st2"
+         cx="593.81879"
+         cy="326.23856"
+         r="4.3000002"
+         id="circle810"
+         style="fill:none;stroke:#ff0000;stroke-miterlimit:10" />
+      <circle
+         class="st2"
+         cx="891.41876"
+         cy="28.638571"
+         r="4.3000002"
+         id="circle812"
+         style="fill:none;stroke:#ff0000;stroke-miterlimit:10" />
+    </g>
+    <path
+       class="st2"
+       d="M 140.85032,171.69909 H 58.353241 c -2.06375,0 -3.757084,-1.66687 -3.757084,-3.75708 V 85.444925 c 0,-2.06375 1.666875,-3.757083 3.757084,-3.757083 h 82.497079 c 2.06375,0 3.75709,1.666875 3.75709,3.757083 v 82.497085 c 0,2.06375 -1.66688,3.75708 -3.75709,3.75708 z"
+       id="path804"
+       style="fill:none;stroke:#ff0000;stroke-width:0.264583;stroke-miterlimit:10" />
+  </g>
+</svg>
