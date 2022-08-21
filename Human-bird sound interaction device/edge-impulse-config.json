@@ -1,0 +1,9 @@
+{
+    "host": "edgeimpulse.com",
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5Njc5LCJpYXQiOjE2NjAzMTY5NjcsImV4cCI6MTY2MjkwODk2N30.zi-ljz3wHl1ylHp3Mx9r4-UPsthSvgcS2W9DigpF9Jo",
+    "lastVersionCheck": 1660316956128,
+    "dataForwarderDevices": {},
+    "daemonDevices": {},
+    "runner": {},
+    "linuxProjectId": 115266
+}
