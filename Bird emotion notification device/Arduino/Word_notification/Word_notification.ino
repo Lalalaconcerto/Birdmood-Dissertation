@@ -152,7 +152,7 @@ void loop() {
 
   // LED control based on dofferent training results
   
-  if (unhappy_chirp > 0.7) {
+  if (unhappy_chirp > 0.8) {
     Serial.println("I am unhappy");
     for (int i = 0; i <= 7; i++) {
       pixels.setPixelColor(i, pixels.Color(0, 102, 204));
@@ -165,7 +165,7 @@ void loop() {
     delay(500);
     pixels.clear();
   }
-  else if (relax_chirp > 0.7) {
+  else if (relax_chirp > 0.8) {
     Serial.println("I am relaxed");
     for (int i = 0; i <= 7; i++) {
       pixels.setPixelColor(i, pixels.Color(0, 102, 204));
@@ -178,7 +178,7 @@ void loop() {
     delay(500);
     pixels.clear();
   }
-  else if (happy_chirp > 0.7) {
+  else if (happy_chirp > 0.8) {
     Serial.println("I am happy");
     for (int i = 0; i <= 7; i++) {
       pixels.setPixelColor(i, pixels.Color(0, 102, 204));
@@ -191,7 +191,7 @@ void loop() {
     delay(500);
     pixels.clear();
   }
-  else if (single_tweet > 0.7) {
+  else if (single_tweet > 0.8) {
     Serial.println("I am contactting");
     for (int i = 0; i <= 7; i++) {
       pixels.setPixelColor(i, pixels.Color(0, 102, 204));
