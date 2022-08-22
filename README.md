@@ -8,6 +8,7 @@ At the same time, a push button is introduced which allows people to control the
 
 A physical device displays the bird emotions training results with a RGB LED text display based on ESP8266 NodeMcu board. It subscribes data from MQTT and display it with different lighted texts. The overview of the mechanical design of the bird emotion notification device based on ESP8266 is shown in **Section 3** as follows.
 
+
  
 
 ## 1. **Bird Emotion Classification Using Edge Impulse and Live Data Streaming**
@@ -183,7 +184,7 @@ The body of this device is made of wood. The screen of this device is made made 
 
 ## 4. Demonstration Video ##
 
-The demonstration video is available at Youtube.
+The demonstration video is available at Youtube: https://youtu.be/1-9nC-SuHiA
  
 
  
